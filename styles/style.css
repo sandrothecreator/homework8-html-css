@@ -1,0 +1,54 @@
+.fullanimation {
+    position: relative;
+	width: 1920;
+	height: 960px;
+}
+
+.background {
+    position: absolute;
+	width: 1920px;
+	height: 960px;
+}
+.bird-img {
+    position: absolute;
+	width: 100px;
+	height: 100px;
+	transform: translate(0px,100px);
+	animation: bird-img 12s infinite;
+}
+@keyframes bird-img {
+	from {left: 0px}
+	to {left: 1800px}
+}
+.bird-img2 {
+    position: absolute;
+	width: 100px;
+	height: 100px;
+	transform: translate(0px,200px);
+	animation: bird-img2 10s infinite;
+}
+@keyframes bird-img2 {
+	from {left: 0px}
+	to {left: 1800px}
+}
+.mogepare {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    font-size: 20px;
+    bottom: 100px;
+    left: 190px ;
+}
+.new {
+    opacity: 0;
+}
+.old, .new {
+    transition: opacity 0.5s linear;
+}
+.mogepare:hover .old {
+    opacity: 0;
+}
+.mogepare:hover .new {
+    opacity: 1;
+    font-size: 70px;
+}
